@@ -4,10 +4,10 @@ const timeago = require('timeago.js');
 const getHeadlines = async (date) => {
   console.log('start fetching headlines')
   try {
-    // end of the week
+    // end of the month
     const endTime = Math.round(new Date(date).getTime() / 1000);
-    // 12 hour before start of the week (save missed posts)
-    const startTime = Math.round(new Date(date).getTime() / 1000) - (7 * 24 * 60 * 60 + 12 * 60 * 60);
+    // TODO: make it more accurate?
+    const startTime = Math.round(new Date(date).getTime() / 1000) - (31 * 24 * 60 * 60 + 12 * 60 * 60);
     const res = await axios.get(`https://hn.algolia.com/api/v1/search?numericFilters=created_at_i>${startTime},created_at_i<${endTime}`);
     const top10Objs = res.data.hits.slice(0, 10);
     const contents = top10Objs
