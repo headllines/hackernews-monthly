@@ -21,7 +21,8 @@ const run = async (date) => {
   });
 }
 
-run(new Date());
+run(new Date())
+  .catch(err => {throw err});
 
 
 // const sleep = () => new Promise(res => setTimeout(res, 2000));
