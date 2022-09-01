@@ -1,3 +1,4 @@
+
 # Hacker News Monthly Top 10 posts
 
 [![](https://badgen.net/badge/icon/RSS/orange?icon=rss&label)](http://rsshub.app/github/issue/headllines/hackernews-monthly) 
@@ -46,3 +47,6 @@ We at [headllines.com](https://headllines.com) build open source headline collec
 
 - [timqian](https://github.com/timqian)
 - [leadream](https://github.com/leadream)
+
+> Updated at Thu Sep 01 2022 01:07:08 GMT+0000 (Coordinated Universal Time)
+  
